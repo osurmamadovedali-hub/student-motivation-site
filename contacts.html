@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Мотивация для студентов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-address-card"></i> Контакты и поддержка</h1>
+            <p>Свяжитесь с нами, мы всегда рады помочь</p>
+        </div>
+        <nav>
+            <ul class="nav-grid">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="gallery.html" class="nav-link"><i class="fas fa-camera"></i> Галерея</a></li>
+                <li><a href="contacts.html" class="nav-link active"><i class="fas fa-envelope"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-main">
+        <div class="contacts-grid">
+            <!-- Информационная карточка -->
+            <section class="info-card">
+                <h2><i class="fas fa-user-circle"></i> Разработчики проекта</h2>
+                <div class="developer-info">
+                    <i class="fas fa-user-graduate developer-icon"></i>
+                    <h3>Курбанов Имам & Ошурмамадов Кишкорбек</h3>
+                    <p class="specialization"><i class="fas fa-code"></i> Студенты 1 курса | Будущие IT-специалисты</p>
+                    
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> support@student-motivation.ru</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Локация:</strong> Москва, Россия</p>
+                    </div>
+
+                    <div class="social-links">
+                        <strong><i class="fas fa-share-alt"></i> Социальные сети:</strong>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i> Telegram</a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i> VK</a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Форма обратной связи -->
+            <section class="feedback-form">
+                <h2><i class="fas fa-paper-plane"></i> Напишите нам</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя <span class="required-star">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required-star">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="ivan@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема сообщения</label>
+                        <select id="subject" name="subject">
+                            <option value="question">Вопрос по учёбе</option>
+                            <option value="support">Нужна поддержка</option>
+                            <option value="cooperation">Сотрудничество</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение <span class="required-star">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Опишите ваш вопрос или проблему..." required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Я согласен(на) на обработку персональных данных <span class="required-star">*</span></label>
+                    </div>
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Отправить сообщение</button>
+                </form>
+            </section>
+
+            <!-- Дополнительный блок FAQ -->
+            <section class="info-block faq-block">
+                <h3><i class="fas fa-question-circle"></i> Часто задаваемые вопросы</h3>
+                <div class="faq-item">
+                    <p><strong>Вопрос:</strong> Как вы можете мне помочь?</p>
+                    <p><strong>Ответ:</strong> Мы делимся мотивационным контентом, советами и создаём поддерживающее сообщество.</p>
+                </div>
+                <div class="faq-item">
+                    <p><strong>Вопрос:</strong> Бесплатно ли это?</p>
+                    <p><strong>Ответ:</strong> Да, наш проект полностью бесплатен для всех студентов.</p>
+                </div>
+                <div class="faq-item">
+                    <p><strong>Вопрос:</strong> Как часто добавляется новый контент?</p>
+                    <p><strong>Ответ:</strong> Мы обновляем галерею и добавляем новые статьи еженедельно.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026. Проект "Мотивация для студентов". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

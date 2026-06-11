@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Мотивация для студентов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-images"></i> Мотивационная галерея</h1>
+            <p>Коллекция изображений, вдохновляющих на успех в учёбе</p>
+        </div>
+        <nav>
+            <ul class="nav-grid">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="gallery.html" class="nav-link active"><i class="fas fa-camera"></i> Галерея</a></li>
+                <li><a href="contacts.html" class="nav-link"><i class="fas fa-envelope"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i> Изображений: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i> Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active"><i class="fas fa-th"></i> Сетка</button>
+                <button id="list-view" class="view-btn"><i class="fas fa-list"></i> Список</button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="study">Учёба</button>
+                <button class="filter-btn" data-filter="success">Успех</button>
+                <button class="filter-btn" data-filter="goal">Цели</button>
+            </div>
+        </div>
+
+        <!-- ГАЛЕРЕЯ С CSS GRID -->
+        <div class="gallery-grid" id="image-gallery">
+            <!-- Карточки будут добавлены через JavaScript -->
+        </div>
+
+        <aside class="gallery-info">
+            <h3><i class="fas fa-lightbulb"></i> Интересный факт</h3>
+            <p>Согласно исследованиям, визуализация целей повышает шансы на их достижение на 42%. Добавляйте вдохновляющие картинки в свой daily routine!</p>
+        </aside>
+    </main>
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>&copy; 2025. Проект "Мотивация для студентов".</p>
+            <p class="js-status"><i class="fas fa-heart" style="color: #ff6b8b;"></i> JavaScript активен: ставь лайки картинкам!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
